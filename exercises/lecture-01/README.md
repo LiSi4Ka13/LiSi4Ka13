@@ -1,1 +1,1 @@
-## Домашні вправи до лекції 1
+## Exercises for lecture 1
