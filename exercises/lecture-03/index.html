@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 challenges</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+    <link rel="manifest" href="/ico/site.webmanifest">
+
+    <!-- 
+		Додайте тут елеиент style 
+		В сепедині style визначте селектор p з властивістю color: red;
+    -->
+
+    <style>
+        p {
+            color: red;
+        }
+     
+    </style>
+    <style type="text/css">
+     
+        body {
+            background: var(--bgColor);
+        }
+
+        div {
+            --bgColor: limegreen;
+        }
+        p {
+            background: var(--bgColor);
+        }
+
+    </style>
+</head>
+    <body>
+        <h2>Сторінка Вікіпедії для мови CSS</h2>
+        <iframe src="https://uk.wikipedia.org/wiki/CSS" title="Сторінка Вікіпедії для мови CSS"></iframe>
+
+    <!-- На сайті Wikipedia знайдіть сторінку про CSS українською мовою -->
+
+    <!-- Додайте тут елеиент iframe з посиланням на українську версію Wikipedia page for the CSS language -->
+
+    <!-- В елеиенті iframe визначте атрибут title зі значенням Сторінка Вікіпедії для мови CSS -->
+     <!-- 
+		Додайте тут елеиент p з текстом This is my paragraph.
+		визначте атрибут style для тега p зі значенням color: blue;
+	-->
+        <p style="color: blue;">This is my paragraph</p>
+    <!-- 
+		який колір буде мати текст This is my paragraph і чому (буде мати синій колір оскільки ми перезаписали style для елемента "p").
+	-->
+
+        <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+        <p class="excitingP">The most exciting paragraph on the page. One of a kind!</p>
+    <!--   
+        Замість класів тут було "id", можливо потрібно було просто змінити атрибут але на мій погляд так краще, що б не потрібно було додавати два однакові стилі.	
+    -->
+        <div class="excitingP">The most exciting paragraph on the page. One of a kind!</div>
+
+ <style>
+    .excitingP {
+    background: #f69d3c;
+    border: 1px solid #696969;
+    padding: 10px;
+  }
+
+ </style>
+    <!-- Додайте тут 2 елеиенти div: -->
+        <div>
+            <h3>Div 1</h3>
+            <p>Paragraph 1</p>
+        </div>
+    
+        <div>
+            <h3>Div 2</h3>
+            <p>Paragraph 2</p>
+        </div>
+    </body>
+</html>
