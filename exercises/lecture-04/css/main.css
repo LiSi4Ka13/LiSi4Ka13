@@ -1,0 +1,60 @@
+h1, h2, h3 {
+    color: gray;
+}
+
+#main {
+    color: #e60202;
+}
+
+.h2 {
+    color: red;
+}
+
+.heading {
+    color: green;
+}
+
+ul > li {
+    font-weight: bold;
+}
+
+section > p {
+    color: red;
+   }
+   /* p - нащадок div a не section, тому колір не зміниться */
+
+.hd2 h1:first-of-type + h2 {
+    color: indigo;
+    }
+
+p.first a {
+    color: green;
+}
+
+p .first > a {
+    color: green;
+}
+
+div ~ p {
+    color: salmon;
+}
+
+.translucent-box {
+    background: hsla(0deg, 100%, 50%, 0,5)
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 140%;
+}
+
+h1 {
+    font-size: 240%;
+}
+
+h1 {
+    text-align: center;
+}
