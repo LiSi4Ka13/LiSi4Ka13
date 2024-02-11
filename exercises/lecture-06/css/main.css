@@ -1,0 +1,90 @@
+a {
+    color: indigo; 
+    text-decoration: none; 
+}
+
+a:hover {
+    color: salmon;
+}
+
+a:visited {
+    color: gold;
+}
+
+a:active {
+    color: red;
+}
+
+a:focus {
+    color: orange;
+}
+
+input[type="number"]:valid {
+    background-color: rgba(0, 255, 0, 0.25); 
+}
+
+input[type="number"]:invalid {
+    background-color: rgba(255, 0, 0, 0.25); 
+}
+
+ul:nth-of-type(2) li:first-of-type {
+    color: orange;
+}
+ul:nth-of-type(3) li:nth-of-type(1) {
+    color: orange;
+} 
+
+ul:nth-of-type(3) li:nth-of-type(2) span {
+    color: orange;
+} 
+
+.d1 li:last-child {
+    color: orange;
+}
+
+span:last-child {
+    color: orange;
+}
+
+.p1 ul li {
+    color: black;
+    background-color: yellow;
+}
+
+.p1 ul li:not(.first-item) {
+    color: orange;
+}
+
+.p1 ul li.first-item {
+    color: black;
+    background-color: white;
+}
+
+.p1 ul li:last-child {
+    color: black;
+    background-color: white;
+}
+
+ol li:nth-child(2) {
+    color: orange;
+}
+
+ol li:nth-child(even) {
+    color: orange;
+}
+
+ol li:nth-child(2n+6) {
+    color: orange;
+}
+
+.ua::before {
+    content: 'Слава ';
+}
+
+.hero::after {
+    content: ' Слава';
+}
+
+.cont::before {
+    content: '\00A7 ';
+}
