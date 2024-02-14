@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecture #9 Управління потоком</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+    <link rel="manifest" href="/ico/site.webmanifest">
+    <style>
+        img {
+            position: relative;
+            width: 250px;
+            margin-left: 17px;
+            margin-bottom: 10px;
+            float: right;
+            z-index: 10;
+        }
+
+        .static-position {
+            position: static;
+            background: yellow;
+        }
+
+        .relative-position {
+            position: relative;
+            background: red;
+            width: 750px;
+            top: 50px;
+            left: 200px;
+            z-index: 2;
+        }
+
+        .absolute-position {
+            position: absolute;
+            background: blueviolet;
+            top: 30px;
+            left: 30px;
+        }
+
+        h1 {
+            background-color: white;
+            padding: 9px;
+            margin: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        p:nth-of-type(1) {
+            position: absolute;
+            background: lime;
+            top: 10px;
+            right: 30px;
+        }
+
+        dt {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 1em 0;
+            position: sticky;
+            top: 0;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Управління потоком</h1>
+    <p>
+        Examples of the CSS float Property
+        Below are some examples of how the CSS float property works.
+    </p>
+    <p>Статичне позиціонування є типовим для кожного елемента. Це просто означає помістіть елемент у звичайне положення
+        в документі.</p>
+    <p class="static-position">Статичне позиціонування є типовим для кожного елемента. Це просто означає помістіть
+        елемент у звичайне положення в документі.</p>
+        <img src="01.gif">
+    <p class="relative-position">
+        Відносне позиціювання. Положення елемента встановлюється відносно його поточного положення. Додавання
+        властивостей left, top, right і bottom змінює позицію елемента і зрушує його в ту чи іншу сторону. Ця
+        властивість дозволяє змінюва ти позицію елемента без зміни макету.
+    </p>
+
+    <h2>Sticky positioning</h2>
+
+    <dl>
+        <dt>A</dt>
+        <dd>Apple</dd>
+        <dd>Ant</dd>
+        <dd>Altimeter</dd>
+        <dd>Airplane</dd>
+        <dt>B</dt>
+        <dd>Bird</dd>
+        <dd>Buzzard</dd>
+        <dd>Bee</dd>
+        <dd>Banana</dd>
+        <dd>Beanstalk</dd>
+        <dt>C</dt>
+        <dd>Calculator</dd>
+        <dd>Cane</dd>
+        <dd>Camera</dd>
+        <dd>Camel</dd>
+        <dt>D</dt>
+        <dd>Duck</dd>
+        <dd>Dime</dd>
+        <dd>Dipstick</dd>
+        <dd>Drone</dd>
+        <dt>E</dt>
+        <dd>Egg</dd>
+        <dd>Elephant</dd>
+        <dd>Egret</dd>
+    </dl>
+</body>
+
+</html>
