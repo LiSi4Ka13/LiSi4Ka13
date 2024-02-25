@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic font-size</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+    <link rel="manifest" href="/ico/site.webmanifest">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            color: #000;
+            background: #fff;
+            font-family: Arial, sans-serif;
+            padding: 1em;
+            font-size: clamp(16px, calc(16px + (20 - 16) * ((100vw - 768px) / (1920 - 768))), 36px);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+                /* < 768px */
+            }
+        }
+
+        @media (min-width: 1920px) {
+            body {
+                font-size: 48px;
+                /* > 1920px */
+            }
+        }
+    </style>
+</head>
+
+<body translate="no">
+    <p>
+        This text has a font size of 20px at viewport width of 768px and font size of 36px when viewport width is
+        1920px. But if the viewport width is less than 768px, the font-size won't get lower than 16px and if the
+        viewport width is more than 1920px font size will stop scaling at 48px.
+    </p>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+main{
+/*  1 
+    grid-template-columns: 15% 60% 25%; 
+
+    2 
+    grid-template-rows: 95px 1fr 70px;  
+    
+    3 
+    grid-template-rows: 90px 300px 1fr;          
+    grid-template-columns: repeat(4, 1fr);
+
+    4
+    justify-content: center;
+    grid-template-columns: repeat(4, 350px);
+
+    5
+    justify-content: end;
+    grid-template-columns: repeat(4, 50px);
+
+    6 
+    grid-template-columns: repeat(4, 50px);
+    justify-content: space-between;
+
+    7 
+    justify-content: space-around;
+    grid-template-columns: repeat(4, 50px);
+
+    8 
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4, 50px);
+
+    9 
+    place-items: stretch;
+    grid-template-columns: 1fr 1fr;
+
+    10
+    grid-template-columns:  repeat(2, 1fr);    
+    justify-content: start;
+
+    11
+    grid-template-columns:  repeat(2, 1fr);    
+    justify-content: center;
+
+    12
+    grid-template-columns:  repeat(2, 1fr);    
+    grid-row-gap: 10px;
+
+    13  
+*/
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;  
+
+    }
