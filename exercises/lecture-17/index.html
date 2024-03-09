@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+        // let x = 3
+        // let y = 4
+        // x == 3 // true
+        // x === "3" // false
+        // x != 5 // true
+        // x !== "5" // true
+        // X !== 3 // ReferenceError
+        // y > 5 // false
+        // y >= 3 // true
+        // y < 5 // true
+        // y <= 2 // false
+        // 1 == true // true
+        // null == undefined // true
+        // NaN == NaN // false
+
+        // let x = 3;
+        // let y = 4;
+        // let z = 5;
+        // x ||= y;     Результат: 3
+        // x || (y = z);  Результат: 3
+        // x &&= y;    Результат: 4
+        // x && (y = z);  Результат: undefined 
+        // x ??= y;     Результат: 3
+        // x ?? (y = z);  Результат: 3
+
+
+        'use strict';
+        const targetNumber = Math.floor(Math.random() * 10) + 1;
+        const userGuess = prompt('Спробуйте вгадати число (від 1 до 10):');
+        if (userGuess === null) {
+            alert('Ви скасували гру. Правильне число було ' + targetNumber + '.');
+        } else {
+            const guessedNumber = parseInt(userGuess);
+            if (isNaN(guessedNumber)) {
+                alert('Невірний ввід. Будь ласка, введіть коректне число.');
+            } else {
+                if (guessedNumber === targetNumber) {
+                    alert('Вітаємо, ви вгадали!');
+                } else if (guessedNumber > targetNumber) {
+                    alert('Число занадто велике. Правильне число було ' + targetNumber + '.');
+                } else {
+                    alert('Число занадто мале. Правильне число було ' + targetNumber + '.');
+                }
+            }
+        }
+
+        // Напишіть версію програми, застосовуючи оператор if else
+        const day = prompt('Введіть назву дня тижня:');
+        if (day === 'Понеділок' || day.toLowerCase() === 'monday') {
+            alert('Початок робочого тижня!');
+        } else if (day === 'П\'ятниця' || day.toLowerCase() === 'friday') {
+            alert('Кінець робочого тижня!');
+        } else {
+            alert('Звичайний день');
+        }
+
+        // Напишіть версію програми, застосовуючи оператор switch
+        const day1 = prompt('Введіть назву дня тижня:');
+        switch (day1.toLowerCase()) {
+            case 'понеділок':
+            case 'monday':
+                alert('Початок робочого тижня!');
+                break;
+            case 'п\'ятниця':
+            case 'friday':
+                alert('Кінець робочого тижня!');
+                break;
+            default:
+                alert('Звичайний день');
+        }
+
+        // Напишіть версію програми, застосовуючи оператор if else
+        const score = 56;
+        let grade;
+        if (score < 50) {
+            grade = 'F';
+        } else if (score < 70) {
+            grade = 'D';
+        } else if (score < 80) {
+            grade = 'C';
+        } else if (score < 90) {
+            grade = 'B';
+        } else {
+            grade = 'A';
+        }
+        alert('Ступінь: ' + grade);
+
+        // Напишіть версію програми, застосовуючи оператор if else
+        const score1 = 79;
+        const grade1 = (score1 < 50) ? 'F' :
+            (score1 < 70) ? 'D' :
+                (score1 < 80) ? 'C' :
+                    (score1 < 90) ? 'B' : 'A';
+        alert('Ступінь: ' + grade1);
+
+        //         Виправити помилку у наступному коді:
+        // let firstName = null;
+        // let lastName = undefined;
+        // let username = firstName || lastName ?? "Guest";
+        // console.log(username); // "Guest"
+        // У цьому коді немає помилок, єдине що кидаєтся в очі це відсутність дужок (firstName || lastName), але вони не обовязкові
+    </script>
+
+</body>
+
+</html>

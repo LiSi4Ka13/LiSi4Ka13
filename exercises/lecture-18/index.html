@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <!-- - функція checkAge повертає true, якщо параметр age перевищує 18.
+  - в іншому випадку запитує підтвердження та повертає результат: -->
+
+    <script>
+        function checkAge(age) {
+            if (age > 18) {
+                return true;
+            }
+            // ...
+            return confirm('Did parents allow you?');
+        }
+        // Видалення блоку else не впливає на функціональність
+        // Перепишіть функцію checkAge, використовуючи '?'
+        function checkAge(age) {
+            return (age > 18) ? true : confirm('Did parents allow you?');
+        }
+
+        // Перепишіть функцію checkAge, використовуючи '||'
+        function checkAge(age) {
+            return (age > 18) || confirm('Did parents allow you?');
+        }
+        // Чи потрібні дужки навколо age > 18 - ні, але так код більш читабельний
+
+        // реалізуйте функцію min, використовуючи оператор if else
+        function min(a, b) {
+            if (a < b) {
+                return a;
+            } else {
+                return b;
+            }
+        }
+        console.log(min(2, 5));
+        console.log(min(3, -1));
+        console.log(min(1, 1));
+
+        // реалізуйте функцію min, використовуючи тернарний оператор
+        function min(a, b) {
+            return (a < b) ? a : b;
+        }
+        console.log(min(2, 5));
+        console.log(min(3, -1));
+        console.log(min(1, 1));
+
+        function pow(x, n) {
+            if (n <= 0 || !Number.isInteger(n)) {
+                return null;
+            }
+            let result = 1;
+            for (let i = 1; i <= n; i++) {
+                result *= x;
+            }
+            return result;
+        }
+        let x = parseFloat(prompt('Введіть x:'));
+        let n = parseInt(prompt('Введіть n:'));
+        let result = pow(x, n);
+        if (result !== null) {
+            alert(`Результат pow(${x}, ${n}) = ${result}`);
+        } else {
+            alert('Неправильне значення параметра n. Будь ласка, введіть натуральне ціле число.');
+        }
+
+        // Переписати функцію ask, використовуючи функцію стрілок:
+        const ask = (question, yes, no) => {
+            if (confirm(question)) {
+                yes();
+            } else {
+                no();
+            }
+        };
+        // Переписати функцію ask, використовуючи функціональний вираз:
+        const ask1 = function (question, yes, no) {
+            if (confirm(question)) {
+                yes();
+            } else {
+                no();
+            }
+        };
+
+        function A() { console.log('A was called'); return undefined; }
+        function B() { console.log('B was called'); return false; }
+        function C() { console.log('C was called'); return "foo"; }
+        // Яким чином виконати виклик функцій A() і C(), щоб на консолі отримати такий результат A was called C was called foo
+        A();
+        console.log(C());
+        // Яким чином виконати виклик функцій B() і C(), щоб на консолі отримати такий результат B was called C was called foo
+        B();
+        console.log(C());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+    <link rel="manifest" href="/ico/site.webmanifest">
+
+</head>
+
+<body>
+    <h1>Hello, javascript!</h1>
+
+    <script>
+        let message1 = "Hello";
+        let message2 = "JavaScript";
+        alert(message1 + " " + message2 + "!");
+
+        'use strict';
+        let message = 'hello'; // Помилка - присвоєння + лапки
+        message = 123456;
+
+        var x = prompt('Введіть значення для x:', '');
+        var y = prompt('Введіть значення для y:', '');
+        x = parseFloat(x);
+        y = parseFloat(y);
+        var sum = x + y;
+        alert('Сума чисел ' + x + ' і ' + y + ' дорівнює: ' + sum);
+
+        let a = BigInt(9007199254740991);
+        let b = 9007199254740991n;
+        console.log(a + b);
+
+        let apples = "2";
+        let oranges = "3";
+        let result = Number(apples) + Number(oranges);
+        alert(result);
+
+        // let a = 1, b = 1;
+        // let c = ++a; 
+        // let d = b++; 
+        // "a" дорівнює 2
+        // "b" дорівнює 2
+        // "c" дорівнює 2
+        // "d" дорівнює 1
+
+        // let a = 2;
+        // let x = 1 + (a *= 2);
+        // "a" дорівнює 4
+        // "x" дорівнює 5
+
+        // "" + 1 + 0 результат = "10"
+        // "" - 1 + 0 результат = -1
+        // true + false результат = 1
+        // 6 / "3" результат = 2
+        // "2" * "3" результат = 6
+        // 4 + 5 + "px" результат = "9px"
+        // "$" + 4 + 5 результат = "$45"
+        // "4" - 2 результат = 2
+        // "4px" - 2 результат = NaN
+        // " -9 " + 5 результат = " -9 5"
+        // " -9 " - 5 результат = -14
+        // null + 1 результат = 1
+        // undefined + 1 результат = NaN
+        // NaN + 1 результат = NaN
+
+        // let n = 2;
+        // n += 5;
+        // n *= 2;
+
+        let n1 = "   123   ";
+        let n2 = "123z";
+        let n3 = true;
+        let n4 = false;
+        n1 = Number(n1.trim()); 
+        n2 = parseInt(n2);
+        n3 = Number(n3);
+        n4 = Number(n4);
+        console.log(n1, n2, n3, n4);
+    </script>
+
+</body>
+
+</html>
