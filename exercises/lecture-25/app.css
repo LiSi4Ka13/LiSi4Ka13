@@ -1,0 +1,17 @@
+.students-table {
+    border-collapse: collapse;
+}
+
+.header-cell {
+    background-color: blue;
+    color: azure;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.data-cell {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
